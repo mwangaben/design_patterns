@@ -1,0 +1,52 @@
+<?php
+
+namespace Umbijani\Prototype;
+
+class Marketing extends IAcmePrototype
+{
+    const UNIT = 'Marketing';
+    private $sales = 'sales';
+    private $promotion = 'promotion';
+    private $strategic = 'strategic planning';
+
+    /**
+     * Setting up Employee's department
+     *
+     * @param int $orgCode
+     * @return void
+     */
+    public function setDept($orgCode)
+    {
+        switch ($orgCode) {
+           case 101:
+               $this->dept = $this->sales;
+               break;
+
+           case 102:
+                $this->dept = $this->promotion;
+                break;
+
+           case 103:
+                $this->dept = $this->strategic;
+                break;
+
+           default:
+               $this->dept = 'Unregnized marketing department';
+               break;
+       }
+    }
+
+    /**
+     * Fetching an Employee's department
+     *
+     * @return void
+     */
+    public function getDept()
+    {
+        return $this->dept;
+    }
+
+    public function __clone()
+    {
+    }
+}
