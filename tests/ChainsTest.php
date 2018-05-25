@@ -18,8 +18,10 @@ class ChainsTest extends TestCase
 
         $lights = new Lights;
 
+        // Act
         $alarm->succedWith($lights);
 
+        // Assert
         $this->assertContains('Alarms are not on', $alarm->check($status));
     }
 
