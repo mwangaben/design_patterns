@@ -2,7 +2,7 @@
 
 namespace Umbijani\Prototype;
 
-abstract class IAcmePrototype 
+abstract class IAcmePrototype
 {
     protected $name;
     protected $id;
@@ -14,14 +14,14 @@ abstract class IAcmePrototype
      * @param string $orgCode
      * @return void
      */
-    public abstract function setDept($orgCode);
+    abstract public function setDept($orgCode);
     
     /**
      * Fetching an Employee's department
      *
      * @return void
      */
-    public abstract function getDept();
+    abstract public function getDept();
    
     /**
      * Setting an Employee's name
@@ -29,7 +29,8 @@ abstract class IAcmePrototype
      * @param string $emName
      * @return void
      */
-    public function setName($emName){
+    public function setName($emName)
+    {
         $this->name = $emName;
     }
 
@@ -38,9 +39,10 @@ abstract class IAcmePrototype
      *
      * @return void
      */
-    public function getName(){
+    public function getName()
+    {
         return $this->name;
-    }   
+    }
     
     /**
      * Setting an Employe's Id
@@ -48,16 +50,18 @@ abstract class IAcmePrototype
      * @param int $emId
      * @return void
      */
-    public function setId($emId){
+    public function setId($emId)
+    {
         $this->id = $enId;
     }
 
-   /**
-    *Fetching the Employee Identification Number
-    *
-    * @return int
-    */ 
-    public function getId(){
+    /**
+     *Fetching the Employee Identification Number
+     *
+     * @return int
+     */
+    public function getId()
+    {
         return $this->id;
     }
     
@@ -67,7 +71,8 @@ abstract class IAcmePrototype
      * @param meame $emPic
      * @return void
      */
-    public function setPic($emPic){
+    public function setPic($emPic)
+    {
         $this->employeePic = $emPic;
     }
     
@@ -76,10 +81,5 @@ abstract class IAcmePrototype
      *
      * @return void
      */
-    abstract function __clone();
-    
-    
-    
+    abstract public function __clone();
 }
-
-

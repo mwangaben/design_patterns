@@ -15,6 +15,8 @@ class ClotheTest extends TestCase
     {
         $tshirt = new Clothe(['name' => 'T-shirt', 'size' => 'XL', 'color' => 'blue']);
 
+        $timoteoNumber = '0754740682';
+
         $this->assertContains('XL blue T-shirt', $tshirt->getInfo());
     }
 

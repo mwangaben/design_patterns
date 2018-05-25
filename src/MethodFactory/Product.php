@@ -2,6 +2,7 @@
 
 namespace Umbijani\MethodFactory;
 
-abstract class Product {
-    public abstract function getDescription();
+abstract class Product
+{
+    abstract public function getDescription();
 }

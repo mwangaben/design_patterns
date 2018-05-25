@@ -12,15 +12,14 @@ use Umbijani\MethodFactory\GraphicFactory;
 class MethodFactoryTest extends TestCase
 {
     /** @test **/
-    public function it_return_the_description_from_text_product(){
+    public function it_return_the_description_from_text_product()
+    {
         $this->assertContains('text product', (new TextFactory())->startFactory());
     }
 
     /** @test **/
-    public function it_return_the_description_from_graphic_product(){
+    public function it_return_the_description_from_graphic_product()
+    {
         $this->assertContains('graphics product', (new GraphicFactory())->startFactory());
     }
-    
-    
 }
-

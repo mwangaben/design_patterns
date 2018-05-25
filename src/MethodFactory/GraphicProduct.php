@@ -6,8 +6,6 @@ class GraphicProduct extends Product
 {
     public function getDescription()
     {
-       return 'graphics product'; 
+        return 'graphics product';
     }
-        
-    
 }

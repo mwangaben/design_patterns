@@ -4,9 +4,9 @@ namespace Umbijani\MethodFactory;
 
 class GraphicFactory extends Creator
 {
-    public function factoryMethod(){
+    public function factoryMethod()
+    {
         $gp = new GraphicProduct();
         return $gp->getDescription();
     }
-    
 }

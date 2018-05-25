@@ -2,10 +2,10 @@
 
 namespace Umbijani\MethodFactory;
 
-class TextProduct extends Product 
+class TextProduct extends Product
 {
-    public function getDescription(){
+    public function getDescription()
+    {
         return 'text product';
     }
-    
 }
