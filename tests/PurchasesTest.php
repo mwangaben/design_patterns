@@ -1,8 +1,8 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Umbijani\ChainOfresponsibility\Consumer;
-use Umbijani\ChainOfresponsibility\Retailer;
+use Umbijani\ChainOfResponsibility\Consumer;
+use Umbijani\ChainOfResponsibility\Retailer;
 
 class PurchasesTest extends TestCase
 {
