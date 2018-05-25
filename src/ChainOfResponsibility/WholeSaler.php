@@ -2,15 +2,14 @@
 
 namespace Umbijani\ChainOfResponsibility;
 
-class Consumer extends Purchases
+class WholeSaler extends Purchases
 {
-
     public function buy(Float $price)
     {
-        if ($price < 100) {
-            return 'Bought by the final consumer';
+        if ($price < 1000) {
+            return 'Bought by the wholesaler';
         }
-        
+
         return $this->next($price);
     }
 }
