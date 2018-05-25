@@ -1,10 +1,10 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Umbijani\Chains\HomeStatus;
-use Umbijani\Chains\Alarm;
-use Umbijani\Chains\Lights;
-use Umbijani\Chains\Doors;
+use Umbijani\ChainOfResponsibility\HomeStatus;
+use Umbijani\ChainOfResponsibility\Alarm;
+use Umbijani\ChainOfResponsibility\Lights;
+use Umbijani\ChainOfResponsibility\Doors;
 
 class ChainsTest extends TestCase
 {
@@ -18,10 +18,8 @@ class ChainsTest extends TestCase
 
         $lights = new Lights;
 
-        // Act
         $alarm->succedWith($lights);
 
-        // Assert
         $this->assertContains('Alarms are not on', $alarm->check($status));
     }
 

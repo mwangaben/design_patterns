@@ -1,6 +1,6 @@
 <?php
 
-namespace Umbijani\Chains;
+namespace Umbijani\ChainOfResponsibility;
 
 class Consumer extends Purchases
 {

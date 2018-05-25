@@ -1,6 +1,6 @@
 <?php
 
-namespace Umbijani\Chains;
+namespace Umbijani\ChainOfResponsibility;
 
 interface Trade
 {
