@@ -4,7 +4,6 @@ namespace Umbijani\ChainOfResponsibility;
 
 class Consumer extends Purchases
 {
-
     public function buy(Float $price)
     {
         if ($price < 100) {
