@@ -2,7 +2,6 @@
 
 namespace Umbijani\Observer;
 
-
 class Login implements Subject
 {
     public $observers = [];
@@ -29,9 +28,9 @@ class Login implements Subject
     public function notify()
     {
         $message = [];
-        foreach($this->observers as $observer){
-           $message[] = $observer->handle();
+        foreach ($this->observers as $observer) {
+            $message[] = $observer->handle();
         }
-       return $message;
+        return $message;
     }
 }
