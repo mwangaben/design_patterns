@@ -23,6 +23,11 @@ class WhatsappNotification implements SplObserver
         return $this->subject = $subject;
     }
 
+    /**
+     * The message from thesubject
+     *
+     * @return void
+     */
     public function message()
     {
         if ($this->subject) {

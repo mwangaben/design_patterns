@@ -23,6 +23,11 @@ class FacebookNotification implements SplObserver
         return $this->subject = $subject;
     }
 
+    /**
+     * The message from the subject
+     *
+     * @return void
+     */
     public function message()
     {
         if ($this->subject) {

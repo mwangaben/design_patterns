@@ -6,7 +6,7 @@ class CowSoup extends Soup
 {
     public function addMeat()
     {
-        $this->mixer .= 'A Cow supu with';
+        $this->mixer .= 'A Cow soup with';
         return $this;
     }
 }

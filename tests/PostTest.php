@@ -1,14 +1,14 @@
 <?php
 
 use Umbijani\Observer\FacebookNotification;
+use Umbijani\Observer\WhatsappNotification;
 use Umbijani\Observer\Post;
 use PHPUnit\Framework\TestCase;
-use Umbijani\Observer\WhatsappNotification;
 
 class PostTest extends TestCase
 {
-    /** @test **/
-    public function it_notify_observers_when_a_new_post_is_published()
+    /** @test * */
+    public function it_notify_observers_when_a_new_post_is_published ()
     {
         // Arrange
         $reply = new Post;
@@ -26,8 +26,8 @@ class PostTest extends TestCase
         $this->assertContains('Facebook the new MD has arrived', $facebookNotification->message());
     }
 
-    /** @test **/
-    public function it_notify_only_observers_when_a_new_post_is_published()
+    /** @test * */
+    public function it_notify_only_observers_when_a_new_post_is_published ()
     {
         // Arrange
         $reply = new Post;

@@ -2,19 +2,32 @@
 
 namespace Umbijani\Template;
 
-abstract class Soup
+abstract class Soup implements SoupInterface
 {
+    /**
+     * the components that makes
+     *
+     * @var string
+     */
     protected $mixer;
 
+    /**
+     * @return mixed
+     */
     public function make()
     {
         return $this->addMeat()
-             ->addTomatoes()
-             ->addWater()
-             ->addSalt()
-             ->makeUp();
+            ->addTomatoes()
+            ->addWater()
+            ->addSalt()
+            ->makeUp();
     }
 
+    /**
+     * add flesh/meat
+     *
+     * @return $this
+     */
     abstract public function addMeat();
 
     /**
@@ -27,6 +40,9 @@ abstract class Soup
         return $this;
     }
 
+    /**
+     * @return $this
+     */
     public function addWater()
     {
         $this->mixer .= ' water';
@@ -34,6 +50,9 @@ abstract class Soup
         return $this;
     }
 
+    /**
+     * @return $this
+     */
     public function addSalt()
     {
         $this->mixer .= ' and salt';
@@ -41,6 +60,9 @@ abstract class Soup
         return $this;
     }
 
+    /**
+     * @return mixed
+     */
     public function makeUp()
     {
         return $this->mixer;

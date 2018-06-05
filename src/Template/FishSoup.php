@@ -2,14 +2,20 @@
 
 namespace Umbijani\Template;
 
-class FishSoup extends Soup
+/**
+ * Class FishSoup
+ * @package Umbijani\Template
+ */
+class FishSoup extends Soup implements SoupInterface
 {
+
     /**
      * @return $this
      */
     public function addMeat()
     {
-        $this->mixer .= 'A fish supu with';
+        $this->mixer .= 'A fish soup with';
+
         return $this;
     }
 }

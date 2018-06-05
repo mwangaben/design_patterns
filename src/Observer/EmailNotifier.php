@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: benedict
- * Date: 5/26/18
- * Time: 12:35 PM
- */
 
 namespace Umbijani\Observer;
 
